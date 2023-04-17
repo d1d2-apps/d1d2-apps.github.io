@@ -25,7 +25,18 @@
           },
           extend: {
             colors: {
-              clifford: '#da373d',
+              app: {
+                300: '#fefae3',
+                500: '#fcf5c7',
+                700: '#ffee93'
+              },
+              secondary: {
+                300: '#49444b',
+                500: '#252226'
+              },
+              error: '#ffc09f',
+              info: '#a0ced9',
+              success: '#adf7b6',
             }
           }
         }
@@ -33,7 +44,74 @@
     </script>
   </head>
 
-  <body>
-    <h1 class="text-3xl font-bold">Política de Privacidade | Sudokka</h1>
+  <body class="bg-gradient-to-b from-app-500 to-app-700">
+    <div class="h-screen overflow-y-auto flex flex-col p-5">
+      <header class="flex flex-col items-center gap-5 leading-none pb-5 border-b border-app-300">
+        <h1 class="text-3xl font-black text-secondary-500">Sudokka</h1>
+        <h2 class="text-3xl font-bold text-secondary-300">Política de Privacidade</h2>
+      </header>
+  
+      <main class="flex-1 p-5 flex flex-col gap-[3rem] text-lg max-w-[1200px] mx-auto">
+        <p class="leading-relaxed">
+          Agradecemos por escolher nosso aplicativo de jogo de Sudoku. Nós valorizamos a privacidade
+          dos nossos usuários e estamos empenhados em proteger suas informações pessoais. Esta política
+          de privacidade explica como coletamos, usamos e divulgamos as informações que coletamos do usuário
+          através do nosso aplicativo.
+        </p>
+  
+        <section class="flex flex-col gap-3">
+          <h3 class="font-bold text-xl uppercase">Coleta de informações</h3>
+  
+          <p class="leading-relaxed">
+            Nosso aplicativo de jogo de Sudoku não coleta nenhuma informação pessoal dos usuários. No entanto,
+            exibimos anúncios através do Google AdMob para manter o nosso aplicativo gratuito. O Google AdMob
+            coleta automaticamente alguns dados do usuário, como o endereço IP, o tipo de dispositivo e o sistema
+            operacional. Esses dados são usados para exibir anúncios relevantes para o usuário.
+          </p>
+        </section>
+
+        <section class="flex flex-col gap-3">
+          <h3 class="font-bold text-xl uppercase">Uso de informações</h3>
+
+          <p class="leading-relaxed">
+            As informações coletadas pelo Google AdMob são usadas apenas para exibir anúncios relevantes para
+            o usuário. Não compartilhamos essas informações com terceiros.
+          </p>
+        </section>
+
+        <section class="flex flex-col gap-3">
+          <h3 class="font-bold text-xl uppercase">Divulgação de informações</h3>
+
+          <p class="leading-relaxed">
+            Não divulgamos as informações coletadas pelo Google AdMob a terceiros, exceto conforme exigido por lei.
+          </p>
+        </section>
+
+        <section class="flex flex-col gap-3">
+          <h3 class="font-bold text-xl uppercase">Alterações na política de privacidade</h3>
+
+          <p class="leading-relaxed">
+            Podemos atualizar esta política de privacidade de tempos em tempos. As alterações serão refletidas nesta
+            página. É responsabilidade do usuário verificar esta página regularmente para estar ciente de quaisquer
+            mudanças.
+          </p>
+        </section>
+
+        <section class="flex flex-col gap-3">
+          <h3 class="font-bold text-xl uppercase">Contato</h3>
+
+          <p class="leading-relaxed">
+            Se você tiver alguma dúvida ou preocupação sobre nossa política de privacidade, entre em contato conosco
+            pelo endereço de e-mail fornecido no aplicativo.
+          </p>
+        </section>
+
+        <section class="flex flex-col gap-3">
+          <p class="leading-relaxed">
+            Última atualização: [data da última atualização da política de privacidade]
+          </p>
+        </section>        
+      </main>
+    </div>
   </body>
 </html>
